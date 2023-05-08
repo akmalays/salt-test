@@ -31,6 +31,24 @@ const companyValue: CompanyValue[] = [
   },
 ];
 
+const coreValue = [
+  {
+    id: 1,
+    title: "Dedication",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum, commodi quibusdam enim corporis voluptatibus?",
+  },
+  {
+    id: 2,
+    title: "Intellectual Honestly ",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum, commodi quibusdam enim corporis voluptatibus?",
+  },
+  {
+    id: 3,
+    title: "Curiosity",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum, commodi quibusdam enim corporis voluptatibus?",
+  },
+];
+
 export default function OurCompany() {
   const [storecompanyVal, setStoreCompanyVal] = useState<CompanyValue>(
     companyValue[0]
@@ -128,7 +146,7 @@ export default function OurCompany() {
               </Grid>
             </Grid>
 
-            <Grid display="flex" gap={1}>
+            <Grid display="flex" gap={1} pb={5}>
               <Grid
                 item
                 sx={{
@@ -165,9 +183,61 @@ export default function OurCompany() {
               </Grid>
             </Grid>
           </Grid>
+          {/* core value */}
+          <Grid
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              py: 7,
+            }}
+          >
+            <Typography
+              sx={{ fontWeight: 600, fontSize: 36, color: "#029FE4", pb: 1 }}
+            >
+              Our Core Values
+            </Typography>
+            <Typography
+              sx={{
+                color: "#777777 ",
+                fontSize: 14,
+                pb: 1,
+                textAlign: "center",
+              }}
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+              perspiciatis cupiditate eveniet assumenda sequi omnis molestiae
+              accusantium recusandae officia reprehenderit quis ea nisi corporis
+              expedita consectetur dolorum, nesciunt ipsum amet.
+            </Typography>
+            <Typography
+              sx={{ color: "#777777 ", fontSize: 14, textAlign: "center" }}
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              obcaecati.
+            </Typography>
+            <Grid display="flex" py={5}>
+              {coreValue.map((val) => {
+                return (
+                  <Grid sx={{ maxWidth: 300 }} key={val.id}>
+                    <Grid sx={{ display: "flex", gap: 2, py: 1 }}>
+                      <Typography sx={{ fontWeight: 600, fontSize: 20 }}>
+                        {val.id}
+                      </Typography>
+                      <Typography sx={{ fontWeight: 600, fontSize: 20 }}>
+                        {val.title}
+                      </Typography>
+                    </Grid>
+                    <Typography sx={{ color: "#777777 ", fontSize: 14 }}>
+                      {val.desc}
+                    </Typography>
+                  </Grid>
+                );
+              })}
+            </Grid>
+          </Grid>
         </Grid>
-
-        {/* core value */}
       </Grid>
     </div>
   );
