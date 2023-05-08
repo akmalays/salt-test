@@ -1,15 +1,15 @@
 import "./App.css";
 
 import ContactUs from "./page/contactus";
-import CoreValue from "./page/corevalue";
 import MainPage from "./page/mainpage";
+import OurCompany from "./page/ourcompany";
 import Speciality from "./page/speciality";
 
 function App() {
   return (
     <>
       <MainPage />
-      <CoreValue />
+      <OurCompany />
       <Speciality />
       <ContactUs />
     </>
