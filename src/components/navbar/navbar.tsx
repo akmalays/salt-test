@@ -47,6 +47,7 @@ export default function Navbar() {
                     fontWeight: 500,
                     cursor: "pointer",
                     pr: 2,
+                    pt: 1,
                     "&:hover": {
                       color: "#08385F",
                       textDecoration: "underline",

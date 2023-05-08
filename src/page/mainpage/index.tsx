@@ -27,7 +27,7 @@ export default function MainPage() {
             </Typography>
           </Grid>
           <Grid item>
-            <Typography sx={{ maxWidth: 600, color: "#ffffff", fontSize: 18 }}>
+            <Typography sx={{ maxWidth: 600, color: "#ffffff", fontSize: 14 }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Molestias, alias. Nesciunt suscipit ex aliquam voluptas dolor
               autem sed voluptate nam molestias, possimus, quia necessitatibus
