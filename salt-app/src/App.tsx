@@ -7,12 +7,12 @@ import Speciality from "./page/speciality";
 
 function App() {
   return (
-    <div>
+    <>
       <MainPage />
       <CoreValue />
       <Speciality />
       <ContactUs />
-    </div>
+    </>
   );
 }
 
