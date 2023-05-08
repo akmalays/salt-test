@@ -21,6 +21,7 @@ export default function Navbar() {
             px: 5,
             py: 3,
             justifyContent: "space-between",
+            backgroundColor: "#ffffff",
           }}
         >
           <Grid item sx={{ display: "flex", gap: 3 }}>
